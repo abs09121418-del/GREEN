@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Bilim Markazi - Raqamli Bio-Link",
+  "description": "Bilim Markazi kreativ xodimlari va ustozlar uchun zamonaviy bio-link platformasi. Barcha muhim havolalaringiz bitta joyda.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
