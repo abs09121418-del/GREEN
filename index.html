@@ -2,12 +2,15 @@
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilim Markazi | Raqamli Shaxsingiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Bilim Markazi | Raqamli Bio-Link Platformasi</title>
+    <meta name="description" content="Kreativ mutaxassislar uchun zamonaviy bio-link platformasi.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
         body {
             font-family: 'Outfit', sans-serif;
@@ -16,14 +19,22 @@
             overflow-x: hidden;
             background: #060a07;
             color: white;
+            -webkit-tap-highlight-color: transparent;
         }
         h1, h2, h3, .font-heading {
-            font-family: 'Space+Grotesk', sans-serif;
+            font-family: 'Space Grotesk', sans-serif;
         }
         .glass {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
         .neon-glow {
             box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
