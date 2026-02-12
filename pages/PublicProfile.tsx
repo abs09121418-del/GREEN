@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   Instagram, Github, Twitter, Send, Youtube, 
   ExternalLink, CheckCircle2, Globe, BookOpen 
 } from 'lucide-react';
-import { UserProfile, ThemeType } from '../types';
+import { UserProfile } from '../types';
 import { THEMES } from '../constants';
 
 interface PublicProfileProps {
@@ -44,14 +43,14 @@ const PublicProfile: React.FC<PublicProfileProps> = ({ profile, isPreview = fals
         className="flex flex-col items-center text-center mb-10 w-full"
       >
         <div className="relative mb-6">
-          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-violet-500 to-fuchsia-500 blur-md opacity-50 animate-pulse" />
+          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-emerald-500 to-lime-500 blur-md opacity-50 animate-pulse" />
           <img 
             src={profile.avatar} 
             alt={profile.displayName} 
             className="relative w-28 h-28 rounded-full object-cover border-4 border-white/10" 
           />
           {profile.isVerified && (
-            <div className="absolute bottom-1 right-1 bg-white text-blue-500 rounded-full p-1 border-2 border-zinc-950">
+            <div className="absolute bottom-1 right-1 bg-emerald-500 text-white rounded-full p-1 border-2 border-zinc-950">
               <CheckCircle2 size={16} fill="currentColor" className="text-white" />
             </div>
           )}
